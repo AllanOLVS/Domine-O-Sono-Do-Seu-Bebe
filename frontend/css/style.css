@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url("https://via.placeholder.com/1200x600") center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background-color: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.hero-buttons a:hover {
+  background-color: #00796b;
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.sobre img {
+  max-width: 300px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sobre-content {
+  max-width: 600px;
+}
+
+.sobre-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.botao-insta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.botao-insta a {
+  background-color: #e1306c;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botao-insta a:hover {
+  background-color: #c1275b;
+}
+
+footer {
+  background-color: #eeeeee;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #009688;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
