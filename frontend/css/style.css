@@ -5,9 +5,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+main {
+}
 
 body {
-  background-color: #f7faff;
+  background-color: #ccf6fc;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
@@ -21,7 +23,7 @@ body {
   flex-wrap: nowrap;
   gap: 1rem;
   padding: 0;
-  background-color: #fff;
+  background-color: #ccf6fc;
 }
 
 .header-imagem img {
@@ -32,9 +34,13 @@ body {
   object-fit: contain;
 }
 
+.depoimentos {
+  background-color: #ccf6fc;
+}
+
 /* HERO */
 .hero {
-  background: linear-gradient(to bottom, #e1e4fb, #f7faff);
+  background-color: #ccf6fc;
   text-align: center;
   padding: 4rem 2rem;
 }
@@ -81,7 +87,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background-color: #ffffff;
+  background-color: #ccf6fc;
   text-align: center;
 }
 
@@ -111,6 +117,7 @@ body {
 
 /* INSTAGRAM BOTÃO */
 .botao-insta {
+  background-color: white;
   text-align: center;
   margin: 2rem 0;
 }
@@ -131,11 +138,34 @@ body {
 
 /* FOOTER */
 footer {
-  background-color: #ffffff;
+  background-color: #ccf6fc;
   text-align: center;
   padding: 2rem 1rem;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
   margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-content img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  /* tira o sublinhado dos links */
+  text-decoration: none;
+  /* tira a cor, deixa configuravel*/
+  color: unset;
+}
+
+.footer-content a:hover {
+  color: rgb(0, 160, 253);
 }
 
 footer p {
@@ -144,7 +174,6 @@ footer p {
 }
 
 .footer-links {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -159,6 +188,15 @@ footer p {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.footer-content a img:hover {
+  border: 1px solid transparent;
+}
+
+.link-quebra-linha a {
+  font-size: 16px;
+  display: block;
 }
 
 /* RESPONSIVO */
