@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ccf6fc;
+  background-color: #0d1a26;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
@@ -15,21 +15,21 @@ body {
 
 /* HEADER */
 .header-imagem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  padding: 0;
-  background-color: #ccf6fc;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .header-imagem img {
-  margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  flex-shrink: 1;
-  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.depoimentos {
+  background-color: #0d1a26;
 }
 
 .depoimentos {
@@ -38,7 +38,7 @@ body {
 
 /* HERO */
 .hero {
-  background-color: #ccf6fc;
+  background-color: #0d1a26;
   text-align: center;
   padding: 4rem 2rem;
 }
@@ -85,8 +85,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background-color: #ccf6fc;
-  text-align: center;
 }
 
 .sobre img {
@@ -136,9 +134,9 @@ body {
 
 /* FOOTER */
 footer {
-  background-color: #ccf6fc;
+  background-color: #0d1a26;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
   margin-top: 3rem;
 }
